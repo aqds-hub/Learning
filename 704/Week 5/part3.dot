@@ -1,0 +1,26 @@
+digraph {
+  C [label="C: +100"];
+  S [label="S: start"];  
+
+  A -> S;
+  B -> D;
+  B -> S;
+  D -> B;
+  D -> E;
+  D -> G;
+  E -> D;
+  E -> H;
+  F -> C;
+  F -> J;
+  G -> D;
+  G -> I;
+  H -> E;
+  H -> I;
+  I -> G;
+  I -> H;
+  I -> J;
+  J -> F;
+  J -> I;
+  S -> A;
+  S -> B;
+}
